@@ -1,0 +1,68 @@
+/* Apply an animated gradient background with multiple color stops */
+.app-container {
+  background: linear-gradient(45deg, #26b55a, #3498db, #9b59b6, #e74c3c, #f39c12, #2ecc71); /* Add more colors as needed */
+  background-size: 600% 600%; /* Increase the background size for a smoother transition */
+  animation: gradientAnimation 10s ease infinite; /* Adjust the animation duration and timing function as needed */
+  /* Add a glowing border effect */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3);
+  border-radius: 30px; /* Add rounded corners */
+  cursor: url('cusor.png'), auto;
+
+  
+}
+
+@keyframes gradientAnimation {
+  0%, 100% {
+    background-position: 0% 50%; /* Initial and final position of the gradient */
+  }
+  16.66% {
+    background-position: 100% 50%; /* Move to the second color at 16.66% */
+  }
+  33.33% {
+    background-position: 0% 50%; /* Return to the initial color at 33.33% */
+  }
+  50% {
+    background-position: 100% 50%; /* Move to the third color at 50% */
+  }
+  66.66% {
+    background-position: 0% 50%; /* Return to the initial color at 66.66% */
+  }
+  83.33% {
+    background-position: 100% 50%; /* Move to the fourth color at 83.33% */
+  }
+}
+
+
+/* Other existing styles remain unchanged */
+.app-container {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  border-radius: 30px;
+}
+
+.app-container h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #5c0404;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;    
+  overflow: hidden;
+  
+}
+
+
