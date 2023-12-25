@@ -1,5 +1,5 @@
 {
-  "homepage": "http://phamtienanh01.github.io/tienanh01",
+  "homepage": "https://phamtienanh01.github.io/tienanh01",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -17,9 +17,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
